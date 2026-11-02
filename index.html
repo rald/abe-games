@@ -1,102 +1,64 @@
 <html>
-<head>
+	<head>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+		<link rel="manifest" href="/site.webmanifest">
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="style.css"/>
 
-	<title>Abe's Game World</title>
+		<title>Abe's Game World</title>
 
-</head>
-<body>
-	<center>
+	</head>
 
-		<h1>Abe's Game World</h1>
+	<body>
 
-		<img src="abe-qr.png" width="256" height="256"/>
+		<div class="container">
 
-		<br/><br/>
+			<center>
 
-<video controls poster="videos/abe1-preview.jpg" height="256">
-    <source src="videos/abe1.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
+				<h1>Abe's Game World</h1>
 
-		<br/>
+				<img src="abe-qr.png" width="256" height="256"/>
 
-		<a href="abe1" target="_blank">abe1 - sliding puzzle</a>
+				<br/><br/>
 
-		<br/><br/>
+				<div class="game">Abe1 - Sliding Puzzle <a href="videos/abe1.mp4" target="_blank">preview</a> <a href="abe1" target="_blank">play</a></div>
 
-<video controls poster="videos/abe2-preview.jpg" height="256">
-    <source src="videos/abe2.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
+				<div class="game">Abe2 - Box World (sokoban) <a href="videos/abe2.mp4" target="_blank">preview</a> <a href="abe2" target="_blank">play</a></div>
 
-		<br/>
+				<div class="game">Abe3 - Star World (robozzle) <a href="videos/abe3.mp4" target="_blank">preview</a> <a href="abe3" target="_blank">play</a></div>
 
-		<a href="abe2" target="_blank">abe2 - box world (sokoban)</a>
+				<br/>
 
-		<br/><br/>
+				<a href="https://web.libera.chat/#pantasya" target="_blank">Online Chat Here</a>
 
-<video controls poster="videos/abe3-preview.jpg" height="256">
-    <source src="videos/abe3.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
+			</center>
 
-		<br/>
+		</div>
 
-		<a href="abe3" target="_blank">abe3 - star world (robozzle)</a><br/>
-
-		<br/>
-
-		<a href="https://web.libera.chat/#pantasya" target="_blank">Online Chat Here</a>
-
-	</center>
-
-  <script>
-    const palette = [
-      "#1a1c2c",
-      "#5d275d",
-      "#b13e53",
-      "#ef7d57",
-      "#ffcd75",
-      "#a7f070",
-      "#38b764",
-      "#257179",
-      "#29366f",
-      "#3b5dc9",
-      "#41a6f6",
-      "#73eff7",
-      "#f4f4f4",
-      "#94b0c2",
-      "#566c86",
-      "#333c57",
-    ];
-
-    const rainbowColors = [
-      palette[2],  // #b13e53 - Crimson Red
-      palette[3],  // #ef7d57 - Coral Orange
-      palette[4],  // #ffcd75 - Warm Yellow
-      palette[5],  // #a7f070 - Lime Green
-      palette[6],  // #38b764 - Medium Green
-      palette[10], // #41a6f6 - Bright Blue
-      palette[1],  // #5d275d - Deep Purple
-      palette[2]   // #b13e53 - Loop start color
-    ];
-
-    const heading = document.querySelector('.rainbow-text');
-    heading.style.background = `linear-gradient(90deg, ${rainbowColors.join(', ')})`;
-    heading.style.backgroundSize = '200% auto';
-    heading.style.webkitBackgroundClip = 'text';
-    heading.style.webkitTextFillColor = 'transparent';
-    heading.style.backgroundClip = 'text';
-  </script>
-
-</body>
+		<script>
+			const palette = [
+				"#1a1c2c",
+				"#5d275d",
+				"#b13e53",
+				"#ef7d57",
+				"#ffcd75",
+				"#a7f070",
+				"#38b764",
+				"#257179",
+				"#29366f",
+				"#3b5dc9",
+				"#41a6f6",
+				"#73eff7",
+				"#f4f4f4",
+				"#94b0c2",
+				"#566c86",
+				"#333c57",
+			];
+		</script>
+	</body>
 </html>
