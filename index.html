@@ -1,4 +1,75 @@
-<h1>Abe Games</h1>
-<a href="abe1/">abe1 - sliding puzzle</a><br/>
-<a href="abe2/">abe2 - box world (sokoban)</a><br/>
-<a href="abe3/">abe3 - star world (robozzle)</a><br/>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>Abe's Game World</title>
+
+</head>
+<body>
+	<center>
+
+		<h1 class="rainbow-text">Abe's Game World</h1>
+
+		<img src="abe-qr.png" width="256" height="256"/>
+
+		<br/><br/>
+
+		<a href="abe1" target="_blank">abe1 - sliding puzzle</a><br/>
+		<a href="abe2" target="_blank">abe2 - box world (sokoban)</a><br/>
+		<a href="abe3" target="_blank">abe3 - star world (robozzle)</a><br/>
+
+		<br/>
+
+		<a href="https://web.libera.chat/#pantasya" target="_blank">Online Chat Here</a>
+
+	</center>
+
+  <script>
+    const palette = [
+      "#1a1c2c",
+      "#5d275d",
+      "#b13e53",
+      "#ef7d57",
+      "#ffcd75",
+      "#a7f070",
+      "#38b764",
+      "#257179",
+      "#29366f",
+      "#3b5dc9",
+      "#41a6f6",
+      "#73eff7",
+      "#f4f4f4",
+      "#94b0c2",
+      "#566c86",
+      "#333c57",
+    ];
+
+    const rainbowColors = [
+      palette[2],  // #b13e53 - Crimson Red
+      palette[3],  // #ef7d57 - Coral Orange
+      palette[4],  // #ffcd75 - Warm Yellow
+      palette[5],  // #a7f070 - Lime Green
+      palette[6],  // #38b764 - Medium Green
+      palette[10], // #41a6f6 - Bright Blue
+      palette[1],  // #5d275d - Deep Purple
+      palette[2]   // #b13e53 - Loop start color
+    ];
+
+    const heading = document.querySelector('.rainbow-text');
+    heading.style.background = `linear-gradient(90deg, ${rainbowColors.join(', ')})`;
+    heading.style.backgroundSize = '200% auto';
+    heading.style.webkitBackgroundClip = 'text';
+    heading.style.webkitTextFillColor = 'transparent';
+    heading.style.backgroundClip = 'text';
+  </script>
+
+</body>
+</html>
