@@ -1,31 +1,7 @@
 body {
   background-color: #29366f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
-  font-family: system-ui, -apple-system, sans-serif;
-}
-
-.rainbow-text {
-  font-size: 4rem;
-  font-weight: 800;
-  letter-spacing: 0.05em;
-  
-  background-size: 200% auto;
-  
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-  
-  animation: palette-rainbow-shift 4s linear infinite;
-}
-
-@keyframes palette-rainbow-shift {
-  0%   { background-position: 0% 50%; }
-  100% { background-position: 200% 50%; }
+  color: #f4f4f4;
+  font-family: sans;
 }
 
 a {
